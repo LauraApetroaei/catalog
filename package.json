@@ -13,7 +13,8 @@
   "scripts": {
     "start": "webpack --watch --mode development --env development",
     "build": "webpack --mode production",
-    "server": "nodemon src/server -w src/server/ -w .env"
+    "server": "nodemon src/server -w src/server/ -w .env",
+    "production": "webpack --mode production; nodemon src/server -w src/server/ -w .env"
   },
   "author": "",
   "license": "ISC",
